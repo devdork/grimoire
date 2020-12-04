@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/main.css">
+    <title>kat - "{{ post.title }}"</title>
+</head>
+<body>
+    <header>
+        <div class="header-grid float float-pad">
+            <div class="left-float">
+                <div>
+                    <h1>kat / katrin 🐈‍⬛</h1>
+                    <p>A night-owl enby catgirl witch who loves headpats. </p>
+                </div>
+            </div>
+            <img class="right-float" src="../assets/img/avatar.jpg"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">🏠 Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="post">
+            {{post.content}}
+
+            <em>Post last updated at <time>{{post.date}}</time>.</em>
+        </article>
+    </main>
+    <footer>
+        Site repository available at <a href="https://gitlab.com">example placeholder</a>.
+    </footer>
+</body>
+</html>

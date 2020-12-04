@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <title>kat</title>
+</head>
+<body>
+    <header>
+        <div class="header-grid float float-pad">
+            <div class="left-float">
+                <div>
+                    <h1>kat / katrin 🐈‍⬛</h1>
+                    <p>A night-owl enby catgirl witch who loves headpats. </p>
+                </div>
+            </div>
+            <img class="right-float" src="assets/img/avatar.jpg"/>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">🏠 Home</a></li>
+                <li><a href="">🕶️ Awesome</a></li>
+                <li><a href="">💬 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            
+            <p>Pronouns are she/her, they/them or it/its.</p>
+
+            <p>Inexperienced but ever-trying tech witch. Usually gushing over NixOS. Wants to get into Rust, Kotlin, Haskell and Go. Not too specialised into a domain of magitek.</p>
+
+            <p>Neurodivergent; suffers executive dysfunction too often.</p> 
+            <!-- This website took far too long to finish as a result~ -->
+
+            <p>Reads far too much yuri. Hopelessly gay. Loves her partners dearly.</p>
+        </section>
+        <section id="posts">
+            <h2>Posts</h2>
+
+            <ul>
+                {% for post in posts %}
+                <li>{{ post.title }} - <a href="{{ post.filename }}">{{ post.filename }}</a> - last modified: {{ post.date }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <nav>
+                <ul>
+                    <li>Twitter - <a href="https://twitter.com/floofykate">@floofykate</a></li>
+                    <li>Fediverse - <a href="https://queer.af/@kat">@kat@queer.af</a></li>
+                    <li>XMPP - <a href="xmpp:kat@a3.pm">kat (at) a3 (dot) pm</a></li>
+                    <li>Email - <a href="mailto:kat@dork.dev">kat (at) dork (dot) dev</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        Site repository available at <a href="https://gitlab.com">example placeholder</a>.
+    </footer>
+</body>
+</html>

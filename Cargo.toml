@@ -1,0 +1,18 @@
+[package]
+name = "grimoire"
+version = "0.1.0"
+authors = ["katrin fénix <me@dork.dev>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.11"
+env_logger = "0.8.2"
+askama = "0.10.5"
+glob = "0.3.0"
+scraper = "0.12.0"
+pulldown-cmark = "0.8.0"
+chrono = "0.4.19"
+minify = "1.2"
+fs_extra = "1.2.0"
